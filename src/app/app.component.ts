@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(protected sessionService: SessionService,private ressourceService: RessourceService){}
   ngOnInit(): void {
   //  this.loadSessions();
-    this.loadRessources();
+    //this.loadRessources();
   }
  /* loadSessions():void  {
     this.sessionService.getSession().subscribe((sessions: Session[]) => {

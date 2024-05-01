@@ -11,10 +11,15 @@ import { AllTemplateBackComponent } from './BackOffice/all-template-back/all-tem
 import { HttpClientModule } from '@angular/common/http';
 import { SessionComponent } from './FrontOffice/session/session.component';
 import { RessourceComponent } from './FrontOffice/ressource/ressource.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RessourceBackComponent } from './BackOffice/ressource-back/ressource-back.component';
 import { SidebarComponent } from './BackOffice/sidebar/sidebar.component';
 import { NavbarComponent } from './BackOffice/navbar/navbar.component';
+import { AddLocal2Component } from './BackOffice/add-local-2/add-local-2.component';
+import { AddStudyGroupComponent } from './BackOffice/add-study-group/add-study-group.component';
+import { ViewLocalComponent } from './BackOffice/view-local/view-local.component';
+import { ViewStudyGroupComponent } from './BackOffice/view-study-group/view-study-group.component';
+import { NewCompoentComponent } from './new-compoent/new-compoent.component';
 @NgModule({
 
 
@@ -29,17 +34,12 @@ import { NavbarComponent } from './BackOffice/navbar/navbar.component';
     SessionComponent,
       AllTemplateBackComponent,
       RessourceComponent,
-      RessourceBackComponent
-    
-
-
-
-
-
-
-
-
-
+      RessourceBackComponent,
+      AddLocal2Component,
+      AddStudyGroupComponent,
+      ViewLocalComponent,
+      ViewStudyGroupComponent,
+      NewCompoentComponent,
 
   ],
   imports: [
@@ -48,6 +48,7 @@ import { NavbarComponent } from './BackOffice/navbar/navbar.component';
     HttpClientModule,
     ReactiveFormsModule,
     SidebarComponent,NavbarComponent,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
