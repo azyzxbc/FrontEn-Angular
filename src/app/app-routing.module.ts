@@ -9,6 +9,9 @@ import { AddLocal2Component } from './BackOffice/add-local-2/add-local-2.compone
 import { AddStudyGroupComponent } from './BackOffice/add-study-group/add-study-group.component';
 import { ViewLocalComponent } from './BackOffice/view-local/view-local.component';
 import { ViewStudyGroupComponent } from './BackOffice/view-study-group/view-study-group.component';
+import { AngularChartjsComponent } from './BackOffice/angular-chartjs/angular-chartjs.component';
+import { PccComponent } from './BackOffice/pcc/pcc.component';
+import { WithoutSBComponent } from './without-sb/without-sb.component';
 
 const routes: Routes = [
   {
@@ -19,6 +22,14 @@ const routes: Routes = [
     path:"add_local",
     component:AddLocal2Component
     },
+  {
+    path: "chart",
+    component: AngularChartjsComponent
+  },
+  {
+    path: "chartpie",
+    component: PccComponent
+  },
     {
       path:"get_locals",
       component:ViewLocalComponent
@@ -35,6 +46,7 @@ const routes: Routes = [
     path:"front",
     component:AllTemplateFrontComponent
     },
+    
   {
     path:"test",
     component:AllTemplateFrontComponent
@@ -46,7 +58,12 @@ const routes: Routes = [
     {
       path:"form",
       component:RessourceBackComponent
-    }
+    },
+    {
+    path: "withoutSB",
+    component: WithoutSBComponent
+  }
+
 ];
 
 @NgModule({

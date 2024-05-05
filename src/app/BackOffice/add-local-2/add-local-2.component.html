@@ -1,22 +1,19 @@
+
 <form (ngSubmit)="onSubmit()" class="custom-form">
     <div class="form-group">
-      <label for="availability">Availability:</label>
-      <input type="checkbox"  id="availability" name="availability" [(ngModel)]="formData.availability">
+      <label for="name">Name:</label>
+      <input type="text" id="name"  name="name" [(ngModel)]="formData.name" required>
+    </div>
+    <div class="form-group">
+      <label for="bloc">Bloc:</label>
+      <input type="text" id="bloc" maxlength="1" minlength="1" name="bloc" [(ngModel)]="formData.bloc" required>
     </div>
     <div class="form-group">
       <label for="capacity">Capacity:</label>
-      <input type="number" id="capacity" min="1" max="50" name="capacity" [(ngModel)]="formData.capacity">
+      <input type="number" id="capacity" min="1" max="4" name="capacity" [(ngModel)]="formData.capacity" required>
     </div>
-    <!--<div class="form-group">
-      <label for="typeReservation">Type Reservation:</label>
-      <select id="typeReservation" name="typeReservation" [(ngModel)]="formData.typeReservation">
-        <option value="cours">Cours </option>
-        <option value="résumé">Résumé</option>
-        <option value="examens">examens</option>
-        <option value="tps">tps</option>
-      </select>
-    </div>
-  -->
-    <button type="submit">Submit</button>
+    <button  type="submit" class="btn btn-success m-2">Submit</button>
+    <button  #closeButton type="button" class="btn btn-primary m-2" data-dismiss="modal">Close</button>
   </form>
+  
   

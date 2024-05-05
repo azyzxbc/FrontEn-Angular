@@ -1,20 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AllTemplateBackComponent } from './all-template-back.component';
+import { AngularChartjsComponent } from './angular-chartjs.component';
 
-
-
-describe('AllTemplateBackComponent', () => {
-  let component: AllTemplateBackComponent;
-  let fixture: ComponentFixture<AllTemplateBackComponent>;
+describe('AngularChartjsComponent', () => {
+  let component: AngularChartjsComponent;
+  let fixture: ComponentFixture<AngularChartjsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AllTemplateBackComponent]
+      declarations: [AngularChartjsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AllTemplateBackComponent);
+    fixture = TestBed.createComponent(AngularChartjsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

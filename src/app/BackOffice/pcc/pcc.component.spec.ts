@@ -1,20 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AllTemplateBackComponent } from './all-template-back.component';
+import { PccComponent } from './pcc.component';
 
-
-
-describe('AllTemplateBackComponent', () => {
-  let component: AllTemplateBackComponent;
-  let fixture: ComponentFixture<AllTemplateBackComponent>;
+describe('PccComponent', () => {
+  let component: PccComponent;
+  let fixture: ComponentFixture<PccComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AllTemplateBackComponent]
+      declarations: [PccComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AllTemplateBackComponent);
+    fixture = TestBed.createComponent(PccComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
